@@ -1,0 +1,36 @@
+algoritmo "cadastro"
+var
+nome: caractere
+endereço: caractere 
+cidade: caractere
+CPF: inteiro
+RG: inteiro
+idade: inteiro
+nome do pai: caractere
+nome da mãe: caractere
+peso: real
+renda bruta: inteiro
+
+inicio
+escreva ("Qual seu nome?")
+leia (nome)
+escreva ("Qual seu endereço?")
+leia (endereço)
+escreva ("Qual a sua cidade?")
+leia (cidade)
+escreva ("Insira o numero do seu cpf")
+leia (cpf)
+escreva ("Insira o numero do seu RG")
+leia (rg)
+escreva ("Qual a sua idade?")
+leia (idade)
+escreva ("Qual o nome do seu pai?")
+leia (nome do pai)
+escreva ("Qual o nome da sua mãe?")
+leia (nome da mãe)
+escreva ("Qual o seu Peso?")
+leia (peso)
+escreva ("Qual a sua renda bruta?")
+leia (renda bruta)
+fimse
+fimalgoritmo
