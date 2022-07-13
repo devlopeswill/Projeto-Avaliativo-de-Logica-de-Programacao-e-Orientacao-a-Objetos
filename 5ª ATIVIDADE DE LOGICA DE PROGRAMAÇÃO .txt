@@ -1,0 +1,180 @@
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+Para chegar ao resultado de cada uma das opções, use o modelo ilustrado na imagem em anexo. 
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+algoritmo "meio de transporte do usuario"
+
+var
+resposta=caracteres
+
+escreva("Olá, responda apenas com sim ou não e irei descobrir qual o meio de transporte que você mais usa")
+
+escreva("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
+escreva("O seu transporte é terrestre?")
+leia(resposta)
+se(resposta="sim") entao
+	escreva("Seu transporte comporta apenas uma pessoa?")
+	leia(resposta)
+	se(resposta="sim") entao
+		escreva("seu transporte é pesado?")
+		leia(resposta)
+		se(resposta=sim) entao
+			escreva("Seu transporte é um trator!")
+		senao
+			escreva("Seu transporte usa pedal?")
+			leia(resposta)
+			se(resposta=sim) entao
+				escreva("Seu meio de transporte é uma bicicleta")
+			fimse
+		fimse
+	senao
+		escreva("seu transporte possui duas rodas e é obrigatório o uso do capacete?")
+		leia(resposta)
+		se(resposta="sim") entao
+			escreva ("Seu transporte é uma moto!")
+		senao
+			escreva("Seu transporte comporta mais de uma pessoa?")
+			leia(resposta)
+			se(resposta=sim) entao
+				escreva("seu tranporte anda sobre trilhos?")
+				leia(resposta)
+				se(resposta=sim) entao
+					escreva("Seu meio de tranporte é o Trem!")
+				senao
+					escreva("Seu transporte anda sobre o asfalto?")
+					leia(resposta)
+					se(resposta="sim") entao
+						escreva("Seu transporte é alto?")
+						leia(resposta)
+						se(resposta="sim") entao
+							escreva(Seu transporte possui uma catraca para o controle de passageiros?")
+							leia(resposta) 
+							se(resposta=sim) entao
+								escreva("Seu transporte é o ônibus!")
+							senao
+								escreva(seu transporte pode se conectar a algum tipo de caçamba?")
+								leia(resposta)
+								se(resposta=sim) entao
+									escreva("Seu tranporte é um caminhão")
+								senao
+									escreva ("Seu transporte é leve?")
+									leia(resposta)
+									se(resposta="sim") entao
+										escreva("Seu meio de transporte é o carro!")
+										
+									fimse	
+								fimse
+							fimse
+						fimse		
+					fimse
+				fimse
+			fimse
+		fimse
+	fimse
+senao
+	escreva ("Seu tranporte é aéreo?")
+	leia(resposta)
+	se(resposta="sim") entao
+		escreva("Para utilizar o seu meio de transporte é necessário pular de um lugar alto?")
+		leia(reposta)
+		se(resposta=sim) entao
+			escreva("Seu meio de transporte é o paraquedas!")
+		senao
+			escreva("Para utilizar o seu meio de transporte é necessário estar dentro?")
+			leia(resposta)
+			se(resposta="sim") entao
+				escreva("Seu meio de transporte é lento?")
+				leia(resposta)
+				se(resposta="sim") entao
+				escreva("Seu meio de transporte é o balão!")
+				senao
+					escreva ("Seu meio de transporte tem piloto?")
+					leia(resposta)
+					se(resposta="sim") entao
+						escreva("Seu meio de transporte possui asas fixas?")
+						leia(resposta)
+						se(Resposta=sim) entao
+							escreva("Seu meio de transporte é o avião!")
+						senao
+							escreva("Seu meio de transporte faz voo vertical?")
+							leia(resposta)
+							se(resposta=sim) entao
+								escreva("Seu meio de transporte é o Helicóptero")
+							fimse
+						fimse
+					fimse
+				fimse
+			fimse
+		fimse
+	senao
+		escreva("Seu meio de transporte é aquático?")
+		leia(resposta)
+		se(resposta="sim") entao
+			escreva(Seu meio de transporte é coberto por água?")
+			leia(resposta)
+			se(resposta="sim") entao
+				escreva("Seu meio de transporte é o submarino")
+			senao
+				escreva("Seu meio de transporte navega na água?")
+				leia(resposta)
+				se(resposta="sim") entao
+					escreva ("Seu meio de transporte navega sobre a água?")
+					leia(resposta)
+					se(resposta="sim") entao
+						escreva("Seu meio de transporte possui vela?")
+						leia(resposta)
+						se(resposta="sim") entao
+							escreva("Seu meio de transporte é o Barco")
+						senao
+							escreva("Seu meio de transporte tem motor?")
+							leia(resposta)
+							se(resposta="sim") entao
+								escreva ("Seu meio de transporte é alto")
+								leia(resposta)
+								se(resposta=sim) entao
+									escreva("Seu meio de tranporte é o Navio!")
+								senao
+									escreva ("Seu meio de transporte pode ser descoberto")
+									leia(resposta)
+									se(resposta="sim") entao
+										escreva="Seu meio de transporte é a lancha!")
+									fimse
+								fimse
+							fimse
+						fimse
+					fimse
+				fimse
+			fimse
+		fimse	
+	fimse	
+fimse		
+		
