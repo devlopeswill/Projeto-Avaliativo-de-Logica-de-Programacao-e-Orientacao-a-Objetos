@@ -1,0 +1,176 @@
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. 
+Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+ 
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, 
+de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+ATENÇÃO: As notas por turma não podem se repetir.
+
+
+
+
+
+
+algoritmo "sistemadenotas"
+
+var
+resposta,aluno_A, aluno_B, aluno_C, aluno_D Melhor_aluno_A, Melhor_aluno_B, Melhor_Aluno_C, Melhor_Aluno_D, Melhor_Aluno, Turma_A, Turma_B, Turma_C, Turma_D, Melhor_Turma:caractere
+cont,quant_aprovados_A, quant_aprovados_B, quant_aprovados_C, quant_aprovados_D, quant_aprovados:inteiro
+nota_A, nota_B, nota_C, nota_D, melhor_nota_A, melhor_nota_B, melhor_nota_C, melhor_nota_D,melhor_nota :real
+
+
+
+Inicio
+
+	
+		escreva("Vamos cadastrar a nota dos alunos")
+
+		escreva("Qual turma você quer colocar as notas?")
+		leia(resposta)
+		se (resposta="A")
+			escreva ("Vamos cadastrar a turma A")
+		cont <- 1
+		melhor_nota_A <- 0
+		quant_aprovados_A <- 0
+		
+		para cont de 1 ate 25 faca
+			escreva ("Aluno" cont)
+			escreva ("Qual o nome do Aluno?")
+			leia(aluno)
+			escreva ("Qual a nota do Aluno?")
+			leia(nota_A)
+			se (nota_A>Melhor_nota_A)
+				Melhor_nota_A<-nota_A
+				Melhor_aluno_A<-Aluno_A
+			fimse	
+			se(Melhor_nota_A>Melhor_nota) então 
+			Melhor_nota_A<-Melhor_nota
+			Melhor_Aluno_A<-Melhor_aluno
+			Turma_A<-Melhor_Turma
+			fimse
+
+			
+			
+			se(nota_A=>7)
+			quant_aprovados<-quant_aprovados + 1
+				escreva ("Aluno aprovado no vestibular!!!)
+			senao
+				escreva ("Aluno reprovado no vestibular :( ")
+				
+			escreva ("A melhor nota da turma B foi:" melhor_nota_A "do aluno" Melhor_aluno_A)
+			fimse
+
+		fimpara	
+			
+		senao
+			se (resposta="B") entao
+				escreva (Vamos cadastrar a turma B")
+				cont <- 1
+				melhor_nota_B <- 0
+				quant_aprovados_B <- 0
+				para cont de 1 ate 25 faca
+					escreva ("Aluno" cont)
+					escreva ("Qual o nome do Aluno?")
+					leia(aluno_B)
+					escreva ("Qual a nota do Aluno?")
+					leia(nota_B)
+					se (nota_B>Melhor_nota_B)
+						Melhor_nota_B<-nota_B
+						Melhor_aluno_B<-Aluno_B
+					fimse
+					
+					se(Melhor_nota_B>Melhor_nota) então 
+					Melhor_nota_B<-Melhor_nota
+					Melhor_Aluno_B<-Melhor_aluno
+					Turma_B<-Melhor_Turma
+					fimse
+					
+					se(nota_B=>7)
+					quant_aprovados<-quant_aprovados + 1
+						escreva ("Aluno aprovado no vestibular!!!)
+					senao
+						escreva ("Aluno reprovado no vestibular :( ")
+						
+					escreva ("A melhor nota da turma B foi:" melhor_nota_B "do aluno" Melhor_aluno_B)
+					fimse	
+				fimpara
+			
+			senao
+				se (resposta="C") entao
+					escreva (Vamos cadastrar a turma "C")
+						cont <- 1
+						melhor_nota_C <- 0
+						quant_aprovados_C <- 0
+						para cont de 1 ate 25 faca
+							escreva ("Aluno" cont)
+							escreva ("Qual o nome do Aluno?")
+							leia(aluno_C)
+							escreva ("Qual a nota do Aluno?")
+							leia(nota_C)
+							se (nota_C>Melhor_nota_C)
+								Melhor_nota_C<-nota_C
+								Melhor_aluno_C<-Aluno_C
+							fimse
+							se(Nota_C>Melhor_nota) então 
+							Melhor_nota<-Nota
+							Melhor_nota<-Melhor_aluno
+							Melhor_Turma<-Turma_C
+							fimse
+							se(Melhor_nota_C>Melhor_nota) então 
+							Melhor_nota_C<-Melhor_nota
+							Melhor_Aluno_C<-Melhor_aluno
+							Turma_C<-Melhor_Turma
+							fimse
+							se(nota_C=>7)
+							quant_aprovados<-quant_aprovados + 1
+								escreva ("Aluno aprovado no vestibular!!!)
+							senao
+								escreva ("Aluno reprovado no vestibular :( ")
+						
+								escreva ("A melhor nota da turma C foi:" melhor_nota_C "do aluno" Melhor_aluno_C)
+							fimse
+						fimpara
+				senao
+					se (resposta="D")
+						escreva (Vamos cadastrar a turma "D")
+							cont <- 1
+							melhor_nota_D <- 0
+							quant_aprovados_D <- 0
+							
+							para cont de 1 ate 25 faca
+								escreva ("Aluno" cont)
+								escreva ("Qual o nome do Aluno?")
+								leia(aluno_D)
+								escreva ("Qual a nota do Aluno?")
+								leia(nota_D)
+								se (nota_D>Melhor_nota_D)
+									Melhor_nota_D<-nota_D
+									Melhor_aluno_D<-Aluno_D
+								fimse
+								se(Melhor_nota_D>Melhor_nota) então 
+								Melhor_nota_D<-Melhor_nota
+								Melhor_Aluno_D<-Melhor_aluno
+								Turma_D<-Melhor_Turma
+								fimse
+								
+								
+								se(nota=>7)
+								quant_aprovados<-quant_aprovados + 1
+									escreva ("Aluno aprovado no vestibular!!!)
+								senao
+									escreva ("Aluno reprovado no vestibular :( ")
+									escreva ("A melhor nota da turma D foi:" melhor_nota_D "do aluno" Melhor_aluno_D)
+								fimse
+							fimpara
+					fimse
+				fimse
+			fimse	
+		fimse
+		
+	escreva ("A maior nota de todas foi do :", Melhor_Aluno,"que tirou", Melhor_nota, "e pertence a:",Melhor_Turma)
+	escreva ("O numero de alunos aprovados foi", quant_aprovados)
+	
+	
+
+Fimalgoritmo
+
