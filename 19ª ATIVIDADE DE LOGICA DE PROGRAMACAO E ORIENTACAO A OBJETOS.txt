@@ -1,0 +1,10 @@
+# Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+A teoria dos grafos ou de grafos é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto.
+
+No contexto tecnológico pode-se exemplificar o uso em aplicativos como o Waze que utiliza a teoria dos grafos aliado a outros fatores, como interação do usuario, para
+definir uma melhor rota para ir do ponto A ao B.
+
+Outro uso tecnológico presente no nosso dia a dia é o uso de grafos nas redes sociais usando por exemplo as relações existentes em conteudos parecidos, se você entra no youtube,
+pesquisa sobre culinária, e por fim consome um vídeo. É muito provável que você será redirecionado a consumir outro conteudo parecido.
+
